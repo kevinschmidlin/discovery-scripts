@@ -4,4 +4,6 @@ hostname # Displays the host name portion of the full computer name of the compu
 tasklist # Displays a list of currently running processes
 ipconfig /all # Displays all current TCP/IP network configuration values
 systeminfo # Displays detailed configuration information about a computer and its operating system
+Get-CimInstance -Namespace root/SecurityCenter2 -ClassName AntivirusProduct
+Get-MpComputerStatus | select RealTimeProtectionEnabled
 Stop-Transcript
